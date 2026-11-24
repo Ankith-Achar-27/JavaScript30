@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+nav h2 {
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 6vw, 4.8rem);
+    margin-bottom: 20px;
+}
+
+.hero span {
+    color: #60a5fa;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #c9d1d9;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.button-group {
+    margin-top: 40px;
+}
+
+.button-group a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.primary {
+    background: #3b82f6;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid #3b82f6;
+    color: white;
+}
+
+.button-group a:hover {
+    transform: translateY(-4px);
+}
+
+/* SECTIONS */
+section {
+    margin: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* PROGRESS SECTION */
+.progress-section {
+    margin: 40px 0 60px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #c9d1d9;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 3.3333%;
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    border-radius: 20px;
+    transition: width .4s ease;
+}
+
+/* PROJECT GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* PROJECT CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 210px;
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 16px;
+    padding: 25px;
+    transition: .35s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #60a5fa;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .35);
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #c9d1d9;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* STATUS BADGES */
+.badge {
+    display: inline-block;
+    align-self: flex-start;
+    background: #16a34a;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.coming {
+    background: #d97706;
+}
+
+.badge.inProgress {
+    background: #2563eb;
+}
+.badge.completed {
+    background: #0dac1b;
+}
+/* ABOUT SECTION */
+#about {
+    padding: 35px;
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 16px;
+}
+
+#about p {
+    color: #c9d1d9;
+    line-height: 1.8;
+    max-width: 850px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 50px 0;
+    color: #9ca3af;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    margin-top: 60px;
+}
+
+footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .progress-info {
+        font-size: .9rem;
+    }
+
+    #about {
+        padding: 25px;
+    }
+}
