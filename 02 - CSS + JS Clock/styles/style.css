@@ -1,0 +1,71 @@
+html{
+    background-size: cover;
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=9) no-repeat center;
+    min-height: 100vh;
+    font-family: 'helvetica neue', sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    font-size: 2rem;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 5rem auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+            0 0 0 4px rgba(0,0,0,0.1),
+            inset 0 0 0 3px #EFEFEF,
+            inset 0 0 30px black,
+            0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hands{
+    position: absolute;
+    width: 50%;
+    height: 6px;
+    background: black;
+    top: 50%;
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.675);
+}
+
+.second-hand {
+    height: 2px;
+    width: 50%;
+    background: red;
+}
+
+.min-hand {
+    height: 4px;
+    width: 45%;
+    background: black;
+}
+
+.hour-hand {
+    height: 7px;
+    width: 35%;
+    background: black;
+}
