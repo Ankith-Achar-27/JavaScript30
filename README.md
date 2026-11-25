@@ -25,7 +25,7 @@ Each project focuses on different JavaScript concepts, browser APIs, DOM manipul
 | Day | Project | Status |
 |---|---|---|
 | 01 | JavaScript Drum Kit | ✅ Completed |
-| 02 | CSS + JS Clock | ⏳ Coming Soon |
+| 02 | CSS + JS Clock | ✅ Completed |
 | 03 | CSS Variables | ⏳ Coming Soon |
 | 04 | Array Cardio Day 1 | ⏳ Coming Soon |
 | 05 | Flex Panels Image Gallery | ⏳ Coming Soon |
