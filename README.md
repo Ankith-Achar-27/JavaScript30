@@ -28,7 +28,7 @@ Each project focuses on different JavaScript concepts, browser APIs, DOM manipul
 | 02 | CSS + JS Clock | ✅ Completed |
 | 03 | CSS Variables | ✅ Completed |
 | 04 | Array Cardio Day 1 | ✅ Completed |
-| 05 | Flex Panels Image Gallery | ⏳ Coming Soon |
+| 05 | Flex Panels Image Gallery | ✅ Completed |
 | 06 | Ajax Type Ahead | ⏳ Coming Soon |
 | 07 | Array Cardio Day 2 | ⏳ Coming Soon |
 | 08 | Fun with HTML5 Canvas | ⏳ Coming Soon |
